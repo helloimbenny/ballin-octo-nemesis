@@ -4,3 +4,40 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
 @import compass/reset
+
+html, body
+    color: #fff
+
+.animated
+    -webkit-transition: all 250ms
+    -moz-transition: all 250ms
+    -ms-transition: all 250ms
+    -o-transition: all 250ms
+    transition: all 250ms
+    
+.overlay
+    background: rgba(#000, 0.85)
+    height: 100%
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    color: #fff
+    a.clap
+        @extend .animated
+        font-family: "Proxima Nova"
+        font-weight: 800
+        font-size: 200px
+        display: block
+        text-transform: uppercase
+        padding: 20% 0 
+        height: 20%
+        margin: 0 auto
+        width: 100%
+        text-align: center
+        opacity: 0
+        -webkit-transform: translate3d(0, -10px, -10px) // Force 3d
+        &.on
+            margin-top: 0
+            opacity: 1
+            -webkit-transform: translate3d(0, 0, 0) // Force 3d

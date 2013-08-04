@@ -66,3 +66,49 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 8, ../sass/screen.sass */
+html, body {
+  color: white;
+}
+
+/* line 11, ../sass/screen.sass */
+.animated, .overlay a.clap {
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+
+/* line 18, ../sass/screen.sass */
+.overlay {
+  background: rgba(0, 0, 0, 0.85);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+}
+/* line 26, ../sass/screen.sass */
+.overlay a.clap {
+  font-family: "Proxima Nova";
+  font-weight: 800;
+  font-size: 200px;
+  display: block;
+  text-transform: uppercase;
+  padding: 20% 0;
+  height: 20%;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -10px, -10px);
+}
+/* line 40, ../sass/screen.sass */
+.overlay a.clap.on {
+  margin-top: 0;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+}
