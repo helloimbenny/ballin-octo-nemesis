@@ -82,8 +82,40 @@ html, body {
 }
 
 /* line 18, ../sass/screen.sass */
+audio {
+  display: none;
+}
+
+/* line 21, ../sass/screen.sass */
+p.clap-counter {
+  width: 100%;
+  top: 10%;
+  right: 10%;
+  position: fixed;
+  text-align: right;
+  height: 20%;
+  font-size: 60px;
+  font-family: "Proxima Nova";
+  font-weight: 800;
+  z-index: 99;
+  color: white;
+}
+
+/* line 34, ../sass/screen.sass */
+.hand {
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: red;
+  z-index: 99;
+}
+
+/* line 44, ../sass/screen.sass */
 .overlay {
-  background: rgba(0, 0, 0, 0.85);
+  background: black;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -91,14 +123,14 @@ html, body {
   left: 0;
   color: white;
 }
-/* line 26, ../sass/screen.sass */
+/* line 52, ../sass/screen.sass */
 .overlay a.clap {
   font-family: "Proxima Nova";
   font-weight: 800;
   font-size: 200px;
   display: block;
   text-transform: uppercase;
-  padding: 20% 0;
+  padding: 20% 0 0;
   height: 20%;
   margin: 0 auto;
   width: 100%;
@@ -106,9 +138,16 @@ html, body {
   opacity: 0;
   -webkit-transform: translate3d(0, -10px, -10px);
 }
-/* line 40, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 .overlay a.clap.on {
   margin-top: 0;
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 70, ../sass/screen.sass */
+.overlay p.deck {
+  font-family: "Proxima Nova";
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
 }
